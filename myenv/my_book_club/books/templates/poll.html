@@ -2,15 +2,35 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<nav>
-  <a href="{% url 'books' %}">Home</a>
-  <a href="{% url 'database' %}">Our Books</a>
-  <a href="{% url 'poll' %}">This Month's Poll</a>
-</nav>
-<body>
-<h1>Our Poll</h1>
-</body>
+  <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <nav>
+    <a href="{% url 'books' %}">Home</a>
+    <a href="{% url 'database' %}">Our Books</a>
+    <a href="{% url 'poll' %}">This Month's Poll</a>
+  </nav>
+  <body>
+    <h1>February Poll</h1>
+    <form action="">
+      <div class="poll-container">
+        <label>
+          <input type="radio">
+          <img src="{% static 'book1.jpg' %}" alt="">
+          <p class="description">In The Third Gilmore Girl, Kelly Bishop reflects on her remarkable career, from winning a Tony Award in A Chorus Line to her iconic role as Emily in Gilmore Girls. She shares personal stories and life lessons, including her transition from dance to drama, a tumultuous marriage to a compulsive gambler, her activism for women’s rights, and the loss of her second husband to cancer. With humor and honesty, Bishop celebrates her journey, offering a spirited memoir that showcases her enduring impact on audiences and her vibrant future.</p>
+        </label>
+        <label>
+          <input type="radio">
+          <img src="{% static 'book2.jpg' %}" alt="">
+          <p class="description">In a peaceful retirement village, four unlikely friends meet up once a week to investigate unsolved murders. But when a brutal killing takes place on their very doorstep, the Thursday Murder Club find themselves in the middle of their first live case. Elizabeth, Joyce, Ibrahim and Ron might be pushing eighty but they still have a few tricks up their sleeves. Can our unorthodox but brilliant gang catch the killer before it's too late?</p>
+        </label>
+        <label>
+          <input type="radio">
+          <img src="{% static 'book3.jpg' %}" alt="">
+          <p class="description">Roman Velasco, a successful LA artist with fame and fortune, seems to have it all, but his past haunts him. Only Grace Moore, his new assistant, knows how empty his life truly is. What she doesn’t know is that Roman secretly battles his demons through his graffiti alter ego, the Bird, whose criminal activities could destroy him. Grace, too, has her own painful past. After a failed marriage, she vowed never to let love derail her dreams. But as she grows closer to Roman, their shared struggles begin to connect them in unexpected ways. When a life-changing event occurs, their relationship—and their futures—are altered forever.</p>
+        </label>
+        <button class="submit">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
