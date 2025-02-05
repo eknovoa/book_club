@@ -2,15 +2,53 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<nav>
-  <a href="{% url 'books' %}">Home</a>
-  <a href="{% url 'database' %}">Our Books</a>
-  <a href="{% url 'poll' %}">This Month's Poll</a>
-</nav>
-<body>
-<h1>Book List</h1>
-</body>
+  <head>
+    <script src="https://kit.fontawesome.com/d2e76b99f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <nav>
+    <a href="{% url 'books' %}">Home</a>
+    <a href="{% url 'database' %}">Our Books</a>
+    <a href="{% url 'poll' %}">This Month's Poll</a>
+  </nav>
+  <body>
+    <h1>&#10023; Our Books &#10023;</h1>
+    <table class="soft-table">
+      <thead>
+          <tr>
+              <th>Book Title</th>
+              <th>Author</th>
+              <th>Recommended By</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>The Thursday Murder Club</td>
+              <td>Richard Osman</td>
+              <td>Erin</td>
+              <td><button type="submit" class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+            </button></td>
+          </tr>
+          <tr>
+              <td>The Third Gilmore Girl</td>
+              <td>Kelly Bishop</td>
+              <td>Julie</td>
+              <td><button type="submit" class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+            </button></td>
+          </tr>
+          <tr>
+              <td>Masterpiece</td>
+              <td>Francine Rivers</td>
+              <td>Jill</td>
+              <td><button type="submit" class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+            </button></td>
+          </tr>
+      </tbody>
+    </table>
+    <button class="add-book">Add Book</button>
+  </body>
 </html>
