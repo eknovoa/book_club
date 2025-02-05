@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<nav>
+  <a href="{% url 'books' %}">Home</a>
+  <a href="{% url 'database' %}">Our Books</a>
+  <a href="{% url 'poll' %}">This Month's Poll</a>
+</nav>
+<body>
+<h1>Our Poll</h1>
+</body>
+</html>

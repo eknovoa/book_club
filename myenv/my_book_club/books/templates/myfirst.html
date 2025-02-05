@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<nav>
+  <a href="{% url 'books' %}">Home</a>
+  <a href="{% url 'database' %}">Our Books</a>
+  <a href="{% url 'poll' %}">This Month's Poll</a>
+</nav>
+<body>
+<h1>Welcome to One More Chapter Book Club!</h1>
+<h4>"Many people, myself among them, feel better at the mere sight of a book." - Jane Smiley</h4>
+<div class="container">
+  <img src="{% static 'book-club.png' %}">
+</div>
+</body>
+</html>
